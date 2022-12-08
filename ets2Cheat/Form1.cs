@@ -50,7 +50,7 @@ namespace ets2Cheat
             {
                 long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BF28));
                 long _address1 = _address + 0x195C;
-                vam.WriteInt64((IntPtr)_address1, 0x32D3E940FEFFFFFF);
+                vam.WriteUInt32((IntPtr)_address1, 0xFEFFFFFF);
             }
         }
 
