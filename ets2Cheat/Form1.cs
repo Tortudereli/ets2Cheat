@@ -25,7 +25,7 @@ namespace ets2Cheat
         
         public void moduleAddress()
         {
-            Process process = Process.GetProcessesByName("eurotrucks2")[0];
+            Process process = Process.GetProcessesByName("eurotrucks2")[0]; 
             foreach (ProcessModule module in process.Modules)
             {
                 if (module.FileName.IndexOf("eurotrucks2.exe") != -1)
@@ -50,7 +50,7 @@ namespace ets2Cheat
             {
                 long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BF28));
                 long _address1 = _address + 0x195C;
-                vam.WriteLong((IntPtr)_address1, 0xFFFFFFEF);
+                vam.WriteInt64((IntPtr)_address1, 0x32D3E940FEFFFFFF);
             }
         }
 
