@@ -41,14 +41,14 @@ namespace ets2Cheat
             long _BaseAddress = long.Parse(moduleAddress);
             if (checkBox1.Checked == true)
             {
-                long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BF28));
+                long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BEF8));
                 long _address1 = vam.ReadLong((IntPtr)_address + 0x10);
                 long _address2 = _address1 + 0x10;
                 vam.WriteLong((IntPtr)_address2, 0x7EFFFFFFFFFFFFFF);
             }
             if (checkBox2.Checked == true)
             {
-                long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BF28));
+                long _address = vam.ReadLong((IntPtr)(_BaseAddress + 0x01C1BEF8));
                 long _address1 = _address + 0x195C;
                 vam.WriteUInt32((IntPtr)_address1, 0xFEFFFFFF);
             }

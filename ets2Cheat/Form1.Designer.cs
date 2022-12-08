@@ -83,7 +83,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "1.46.2.2s 64 bit";
+            this.label1.Text = "1.46.2.6s 64 bit";
             // 
             // Form1
             // 
