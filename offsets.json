@@ -1,0 +1,99 @@
+{
+    "gameVersion": "1.47.1.2s (64-bit)",
+    "baseAddress": "0x01BB4B50",
+    "money": {
+        "offset1": "0x10",
+        "offset2": "0x10"
+    },
+    "tp": {
+        "offset1": "0x1964"
+    },
+    "damage0": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x70"
+    },
+    "damage1": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0xF8"
+    },
+    "damage2": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x144"
+    },
+    "damage3": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x80",
+        "offset4": "0x0"
+    },
+    "damage4": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x80",
+        "offset4": "0x4"
+    },
+    "damage5": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x80",
+        "offset4": "0x8"
+    },
+    "damage6": {
+        "offset1": "0x18",
+        "offset2": "0x108",
+        "offset3": "0x80",
+        "offset4": "0xC"
+    },
+    "damage7": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x80",
+        "offset4": "0x0"
+    },
+    "damage8": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x80",
+        "offset4": "0x4"
+    },
+    "damage9": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x80",
+        "offset4": "0x8"
+    },
+    "damage10": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x80",
+        "offset4": "0xC"
+    },
+    "damage11": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x70"
+    },
+    "damage12": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0xF8"
+    },
+    "damage13": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x120"
+    },
+    "damage14": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x124"
+    },
+    "damage15": {
+        "offset1": "0x18",
+        "offset2": "0x88",
+        "offset3": "0x128"
+    }
+}
