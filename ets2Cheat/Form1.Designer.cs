@@ -28,90 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            button1 = new System.Windows.Forms.Button();
+            linkLabel1 = new System.Windows.Forms.LinkLabel();
+            label1 = new System.Windows.Forms.Label();
+            button2 = new System.Windows.Forms.Button();
+            checkBox1 = new System.Windows.Forms.CheckBox();
+            timer1 = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(66, 66);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ACTIVE";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(78, 12);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 19);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Money";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(78, 41);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(53, 19);
-            this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "Level";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            button1.Location = new System.Drawing.Point(66, 75);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "MONEY";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(72, 92);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(63, 15);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Tortudereli";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            linkLabel1.AutoSize = true;
+            linkLabel1.Location = new System.Drawing.Point(72, 103);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new System.Drawing.Size(63, 15);
+            linkLabel1.TabIndex = 4;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Tortudereli";
+            linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 114);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 15);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "1.46.2.6s 64 bit";
+            label1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            label1.Location = new System.Drawing.Point(0, 126);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(214, 15);
+            label1.TabIndex = 5;
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button2
+            // 
+            button2.Location = new System.Drawing.Point(66, 46);
+            button2.Name = "button2";
+            button2.Size = new System.Drawing.Size(75, 23);
+            button2.TabIndex = 6;
+            button2.Text = "TP";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new System.Drawing.Point(61, 19);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new System.Drawing.Size(89, 19);
+            checkBox1.TabIndex = 7;
+            checkBox1.Text = "No Damage";
+            checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 5000;
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(214, 135);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "Form1";
-            this.ShowIcon = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ETS 2 - Cheat";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(214, 141);
+            Controls.Add(checkBox1);
+            Controls.Add(button2);
+            Controls.Add(label1);
+            Controls.Add(linkLabel1);
+            Controls.Add(button1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "Form1";
+            ShowIcon = false;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "ETS 2 - Cheat";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

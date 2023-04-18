@@ -16,3 +16,4 @@ C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\obj\Debug\netcoreapp3.1\ets2Che
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\obj\Debug\netcoreapp3.1\ets2Cheat.genruntimeconfig.cache
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Debug\netcoreapp3.1\VAMemory.dll
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\obj\Debug\netcoreapp3.1\ets2Cheat.csproj.CopyComplete
+C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UgZ2lkEJHx77mRnHvPwjY4ZfioyvhBsfSXHLhPBSJ/20NZGDif2NzNazE/mEpQm/L377jgPOCfIH7hVA9q+WSg==",
+  "dgSpecHash": "ia8cEzjj2eeiWPlCi+outjphDjTfsxyyxMC2oZN0PTX08SD3w0d9qUqLvTaVTxQ38uwoXgNmBi8HfTyWGB8Vnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Furkan\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
