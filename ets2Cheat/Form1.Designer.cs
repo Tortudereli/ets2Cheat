@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new System.Windows.Forms.Button();
             linkLabel1 = new System.Windows.Forms.LinkLabel();
             label1 = new System.Windows.Forms.Label();
@@ -105,9 +106,9 @@
             Controls.Add(linkLabel1);
             Controls.Add(button1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "Form1";
-            ShowIcon = false;
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "ETS 2 - Cheat";
             Load += Form1_Load;

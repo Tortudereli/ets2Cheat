@@ -4,6 +4,7 @@ C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\ets2C
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\ets2Cheat.runtimeconfig.dev.json
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\ets2Cheat.dll
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\ets2Cheat.pdb
+C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\VAMemory.dll
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\obj\Release\netcoreapp3.1\ets2Cheat.csproj.AssemblyReference.cache
 C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\obj\Release\netcoreapp3.1\ets2Cheat.Form1.resources
