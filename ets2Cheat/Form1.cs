@@ -21,7 +21,7 @@ namespace ets2Cheat
             InitializeComponent();
         }
 
-        JObject json;
+        JObject json, versionListjson;
         VAMemory vam = new VAMemory("eurotrucks2");
         long moneyAddress, tpAdress, damage0, damage1, damage2, damage3, damage4, damage5, damage6, damage7, damage8, damage9, damage10, damage11, damage12, damage13, damage14, damage15;
         private void button1_Click(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace ets2Cheat
             catch (Exception)
             {
                 MessageBox.Show("I guess the game is not open. Run the game after you open it.", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
+                Close();
             }
         }
 
@@ -193,9 +193,13 @@ namespace ets2Cheat
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var jsonUrl = new WebClient().DownloadString("https://raw.githubusercontent.com/Tortudereli/ets2Cheat/main/url.txt");
-            json = JObject.Parse(new WebClient().DownloadString(jsonUrl));
-            label1.Text = json["gameVersion"].ToString();
+            versionListjson = JObject.Parse(new WebClient().DownloadString("https://raw.githubusercontent.com/Tortudereli/ets2Cheat/main/versionList.json"));
+            foreach (var item in versionListjson)
+            {
+                comboBox1.Items.Add(item.Key.ToString());
+            }
+            comboBox1.SelectedIndex = 0;
+            json = JObject.Parse(new WebClient().DownloadString(versionListjson[comboBox1.SelectedItem].ToString()));
             moduleAddress();
         }
 
@@ -230,6 +234,12 @@ namespace ets2Cheat
             vam.WriteInt32((IntPtr)damage13, 0x0);
             vam.WriteInt32((IntPtr)damage14, 0x0);
             vam.WriteInt32((IntPtr)damage15, 0x0);
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            json = JObject.Parse(new WebClient().DownloadString(versionListjson[comboBox1.SelectedItem].ToString()));
+            moduleAddress();
         }
     }
 }

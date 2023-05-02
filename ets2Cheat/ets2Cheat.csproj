@@ -8,22 +8,15 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Authors>Tortudereli</Authors>
-    <Version>1.0.0.0</Version>
+    <Version>1.0.1.0</Version>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/Tortudereli/ets2Cheat.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>70601010.png</PackageIcon>
+    <PackageIcon></PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Include="icon.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\..\..\Desktop\70601010.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -32,7 +25,7 @@
 
   <ItemGroup>
     <Reference Include="VAMemory">
-      <HintPath>..\..\..\..\Desktop\VAMemory.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\Others\VAMemory.dll</HintPath>
     </Reference>
   </ItemGroup>
 

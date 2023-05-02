@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "ets2Cheat/1.0.0.0": {
+      "ets2Cheat/1.0.1.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "VAMemory": "1.2.0.0"
@@ -34,7 +34,7 @@
     }
   },
   "libraries": {
-    "ets2Cheat/1.0.0.0": {
+    "ets2Cheat/1.0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

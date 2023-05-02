@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new System.Windows.Forms.Button();
             linkLabel1 = new System.Windows.Forms.LinkLabel();
-            label1 = new System.Windows.Forms.Label();
             button2 = new System.Windows.Forms.Button();
             checkBox1 = new System.Windows.Forms.CheckBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            comboBox1 = new System.Windows.Forms.ComboBox();
             SuspendLayout();
             // 
             // button1
@@ -59,15 +59,6 @@
             linkLabel1.Text = "Tortudereli";
             linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-            // 
-            // label1
-            // 
-            label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            label1.Location = new System.Drawing.Point(0, 126);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(214, 15);
-            label1.TabIndex = 5;
-            label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button2
             // 
@@ -95,14 +86,25 @@
             timer1.Interval = 5000;
             timer1.Tick += timer1_Tick;
             // 
+            // comboBox1
+            // 
+            comboBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(0, 127);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(214, 23);
+            comboBox1.TabIndex = 8;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(214, 141);
+            ClientSize = new System.Drawing.Size(214, 150);
+            Controls.Add(comboBox1);
             Controls.Add(checkBox1);
             Controls.Add(button2);
-            Controls.Add(label1);
             Controls.Add(linkLabel1);
             Controls.Add(button1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -120,9 +122,9 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
