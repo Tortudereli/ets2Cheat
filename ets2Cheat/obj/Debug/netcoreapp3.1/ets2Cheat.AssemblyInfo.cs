@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tortudereli")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0.0+cba0f2d1c37f94b3496a76bb8ca35872e2107f23")]
 [assembly: System.Reflection.AssemblyProductAttribute("ets2Cheat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ets2Cheat")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/Tortudereli/ets2Cheat.git")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.

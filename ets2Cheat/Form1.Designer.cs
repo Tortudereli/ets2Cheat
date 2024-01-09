@@ -36,11 +36,13 @@
             checkBox1 = new System.Windows.Forms.CheckBox();
             timer1 = new System.Windows.Forms.Timer(components);
             comboBox1 = new System.Windows.Forms.ComboBox();
+            checkBox2 = new System.Windows.Forms.CheckBox();
+            timer2 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new System.Drawing.Point(66, 75);
+            button1.Location = new System.Drawing.Point(61, 103);
             button1.Name = "button1";
             button1.Size = new System.Drawing.Size(75, 23);
             button1.TabIndex = 0;
@@ -51,7 +53,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new System.Drawing.Point(72, 103);
+            linkLabel1.Location = new System.Drawing.Point(67, 131);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new System.Drawing.Size(63, 15);
             linkLabel1.TabIndex = 4;
@@ -62,7 +64,7 @@
             // 
             // button2
             // 
-            button2.Location = new System.Drawing.Point(66, 46);
+            button2.Location = new System.Drawing.Point(61, 74);
             button2.Name = "button2";
             button2.Size = new System.Drawing.Size(75, 23);
             button2.TabIndex = 6;
@@ -73,7 +75,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new System.Drawing.Point(61, 19);
+            checkBox1.Location = new System.Drawing.Point(57, 37);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new System.Drawing.Size(89, 19);
             checkBox1.TabIndex = 7;
@@ -91,17 +93,33 @@
             comboBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new System.Drawing.Point(0, 127);
+            comboBox1.Location = new System.Drawing.Point(0, 160);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(214, 23);
             comboBox1.TabIndex = 8;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new System.Drawing.Point(26, 12);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new System.Drawing.Size(160, 19);
+            checkBox2.TabIndex = 9;
+            checkBox2.Text = "Set Speed Limit 200 km/h";
+            checkBox2.UseVisualStyleBackColor = true;
+            checkBox2.CheckedChanged += checkBox2_CheckedChanged;
+            // 
+            // timer2
+            // 
+            timer2.Tick += timer2_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(214, 150);
+            ClientSize = new System.Drawing.Size(214, 183);
+            Controls.Add(checkBox2);
             Controls.Add(comboBox1);
             Controls.Add(checkBox1);
             Controls.Add(button2);
@@ -126,5 +144,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Timer timer2;
     }
 }

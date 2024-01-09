@@ -6,4 +6,6 @@ build_property.ApplicationHighDpiMode =
 build_property.ApplicationUseCompatibleTextRendering = 
 build_property.ApplicationVisualStyles = 
 build_property.RootNamespace = ets2Cheat
-build_property.ProjectDir = C:\Users\Furkan\source\repos\ets2Cheat\ets2Cheat\
+build_property.ProjectDir = C:\Users\tortu\Documents\GitHub\ets2Cheat\ets2Cheat\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

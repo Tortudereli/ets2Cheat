@@ -8,7 +8,7 @@
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <Authors>Tortudereli</Authors>
-    <Version>1.0.1.0</Version>
+    <Version>1.1.0.0</Version>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/Tortudereli/ets2Cheat.git</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -25,7 +25,7 @@
 
   <ItemGroup>
     <Reference Include="VAMemory">
-      <HintPath>..\..\..\..\Desktop\Others\VAMemory.dll</HintPath>
+      <HintPath>..\VAMemory.dll</HintPath>
     </Reference>
   </ItemGroup>
 

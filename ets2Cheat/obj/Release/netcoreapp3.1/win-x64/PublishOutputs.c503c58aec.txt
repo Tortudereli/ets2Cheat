@@ -1,0 +1,2 @@
+C:\Users\tortu\Documents\GitHub\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\publish\win-x64\ets2Cheat.pdb
+C:\Users\tortu\Documents\GitHub\ets2Cheat\ets2Cheat\bin\Release\netcoreapp3.1\publish\win-x64\ets2Cheat.exe

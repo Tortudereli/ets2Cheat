@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Net;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace ets2Cheat
@@ -23,7 +15,7 @@ namespace ets2Cheat
 
         JObject json, versionListjson;
         VAMemory vam = new VAMemory("eurotrucks2");
-        long moneyAddress, tpAdress, damage0, damage1, damage2, damage3, damage4, damage5, damage6, damage7, damage8, damage9, damage10, damage11, damage12, damage13, damage14, damage15;
+        long moneyAddress, tpAdress, speedAdress, damage0, damage1, damage2, damage3, damage4, damage5, damage6, damage7, damage8, damage9, damage10, damage11, damage12, damage13, damage14, damage15;
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -74,6 +66,12 @@ namespace ets2Cheat
 
                 long _tpAddress = vam.ReadLong((IntPtr)_BaseAddress + Convert.ToInt32(json["baseAddress"].ToString(), 16));
                 tpAdress = _tpAddress + Convert.ToInt32(json["tp"]["offset1"].ToString(), 16);
+
+                long _speedAdress = vam.ReadLong((IntPtr)_BaseAddress + Convert.ToInt32(json["speed"]["speedBaseAdress"].ToString(), 16));
+                long _speedAdress1 = vam.ReadLong((IntPtr)_speedAdress + Convert.ToInt32(json["speed"]["offset1"].ToString(), 16));
+                long _speedAdress2 = vam.ReadLong((IntPtr)_speedAdress1 + Convert.ToInt32(json["speed"]["offset2"].ToString(), 16));
+                long _speedAdress3 = vam.ReadLong((IntPtr)_speedAdress2 + Convert.ToInt32(json["speed"]["offset3"].ToString(), 16));
+                speedAdress = _speedAdress3 + Convert.ToInt32(json["speed"]["offset4"].ToString(), 16);
 
                 long _damage0 = vam.ReadLong((IntPtr)_BaseAddress + Convert.ToInt32(json["baseAddress"].ToString(), 16));
                 long _damage01 = vam.ReadLong((IntPtr)_damage0 + Convert.ToInt32(json["damage0"]["offset1"].ToString(), 16));
@@ -240,6 +238,24 @@ namespace ets2Cheat
         {
             json = JObject.Parse(new WebClient().DownloadString(versionListjson[comboBox1.SelectedItem].ToString()));
             moduleAddress();
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                timer2.Start();
+            }
+            else
+            {
+                timer2.Stop();
+                vam.WriteFloat((IntPtr)damage0, 150);
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            vam.WriteFloat((IntPtr)speedAdress, 200);
         }
     }
 }

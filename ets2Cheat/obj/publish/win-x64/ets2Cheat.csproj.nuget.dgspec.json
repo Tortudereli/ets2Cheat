@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj": {}
+    "C:\\Users\\tortu\\Documents\\GitHub\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj": {
-      "version": "1.0.1",
+    "C:\\Users\\tortu\\Documents\\GitHub\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj": {
+      "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj",
+        "projectUniqueName": "C:\\Users\\tortu\\Documents\\GitHub\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj",
         "projectName": "ets2Cheat",
-        "projectPath": "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj",
-        "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Furkan\\source\\repos\\ets2Cheat\\ets2Cheat\\obj\\publish\\win-x64\\",
+        "projectPath": "C:\\Users\\tortu\\Documents\\GitHub\\ets2Cheat\\ets2Cheat\\ets2Cheat.csproj",
+        "packagesPath": "C:\\Users\\tortu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tortu\\Documents\\GitHub\\ets2Cheat\\ets2Cheat\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tortu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
